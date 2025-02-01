@@ -17,6 +17,7 @@ public class EmployeeProcessor {
         
         //Employee newEmployee = new Employee(empName,empId,deptId,salary);
         employeeList.add(newEmployee);
+	System.out.print("Employee Added");
         return newEmployee;
 
     }
