@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.sanskriti</groupId>
 	<artifactId>employeemanagement</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>employeemanagement</name>
 	<description>Employee Management Project for Learning</description>
 	<url/>
