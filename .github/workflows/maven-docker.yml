@@ -19,9 +19,9 @@ jobs:
           java-version: '21'
           cache: 'maven'
       - name: Run Tests
-        uses: mvn test
+        run: mvn test
       - name: Install Dependencies (Skipping Tests)
-        uses: mvn install -DskipTests
+        run: mvn install -DskipTests
       - name: Build Docker Image
         run: docker build -t employeemanagementsystem:v0.1 .
 
