@@ -18,9 +18,9 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           cache: 'maven'
-      - name: Run Tests
-        run: mvn test
       - name: Install Dependencies (Skipping Tests)
         run: mvn install -DskipTests
+      - name: Run Tests
+        run: mvn test
       - name: Build Docker Image
         run: docker build -t employeemanagementsystem:v0.1 .
