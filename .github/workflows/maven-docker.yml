@@ -1,11 +1,11 @@
 name: Java CI/CD with Maven and Docker
 on:
-  push:
-      branches:
-      - "**"
   pull_request:
-       branches:
-       - main
+    branches:
+      - '**'  # Runs when a PR is created
+  push:
+    branches:
+      - master  # Runs after a PR is merged to master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,8 +23,4 @@ jobs:
       - name: Install Dependencies (Skipping Tests)
         run: mvn install -DskipTests
       - name: Build Docker Image
-        run: docker build -t employeemanagementsystem:v0.1 .
-
-      
-
-
+        run: docker build -t employeemanagementsystem:v0.1
