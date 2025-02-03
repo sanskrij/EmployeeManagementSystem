@@ -5,7 +5,7 @@ on:
       - '**'  # Runs when a PR is created
   push:
     branches:
-      - master  # Runs after a PR is merged to master
+      - main  # Runs after a PR is merged to master
 jobs:
   build:
     runs-on: ubuntu-latest
